@@ -379,10 +379,6 @@ function render() {
 			ctx.drawImage(bgImage, 0, 0);
 		}// FIM if
 
-		//desenha o personagem
-		//ctx.fillStyle = "red";
-		//ctx.fillRect(player.x, player.y, player.width, player.height);
-
 		// ---[ Herói ]--- //
 		if (heroReady == true) {
 			ctx.drawImage(heroImage, player.frameX * player.width, 0, // X e Y dentro da imagem
@@ -408,7 +404,7 @@ function render() {
 
 		for (var i = 0; i < boxes.length; i++) {
 			ctx.rect(boxes[i].x, boxes[i].y, boxes[i].width, boxes[i].height);
-		}
+		}S
 
 		ctx.fill();
 
